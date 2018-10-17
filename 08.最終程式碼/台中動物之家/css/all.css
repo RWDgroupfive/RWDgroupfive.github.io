@@ -1,0 +1,53 @@
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    margin: 5px;
+}
+
+.navBox{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.carousel{
+    height: 500px;
+    margin-top: 136px;
+}
+
+.largestBox{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 90px;
+}
+
+/* .title1{
+   margin-bottom: 60px;
+} */
+
+.titleHello{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.bigBox{
+    /* flex-wrap: wrap; */
+    /* background-color: #000; */
+}
+
+.box{
+    display: flex;
+    width: 100%;
+    /* height: 150px; */
+    /* background-color: #fff; */  
+}
+
+.smallBox{
+    margin: 60px;
+}
+
