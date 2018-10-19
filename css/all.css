@@ -6,6 +6,13 @@
     font-family:'Noto Sans TC', sans-serif;
     /*套用思源黑體*/
     }
+    #header{
+        transition: all 0.4s;
+    }
+    .container{
+        max-width: 1140px;
+        position: relative;
+    }
 
     .Ad_FeedMe{
         margin-right: 20px;
@@ -44,7 +51,7 @@
 
 .logo{
     width: 80px;
-    height: 80px;
+    height: 80px;   
 }
 
 .flex{
@@ -101,15 +108,15 @@ a{
 .largestBox{
     margin-top: 60px;
     margin-bottom: 60px;
-    padding: 0 90px;
+    /* padding: 0 0; */
 }
 
 .largestBox2{
- margin-bottom: 60px;
+ margin-bottom: 60px
 }
 
 .midBox2{
- margin: 60px;
+ /* margin: 60px; */
 }
 
 .title1{
@@ -159,12 +166,22 @@ a{
 .card-body {
     padding:5px 30px;
 }
-.img1{
-    background-image: url("/images/backgroundimg.jpg");
-    background-position: 100% 0%;
+.section .img1{
+    background-image: url("/images/置底照片-貓咪-大解析版.jpg");
+    background-position: 100% 20%;
     /* background-attachment:fixed; */
-    background-size: cover;
-    /* height:800px; */
+    background-size:117%;
+    height:750px;
+    /* position: center; */
+    background-attachment:fixed;  
+    /* opacity: 0.5;            */
+}
+section .img1{
+    background-image: url("/images/maxresdefault.jpg");
+    background-position: 100% 20%;
+    /* background-attachment:fixed; */
+    background-size:100%;
+    height:980px;
     /* position: center; */
     background-attachment:fixed;  
     /* opacity: 0.5;            */
@@ -190,6 +207,7 @@ padding: 10px 20px 20px 20px;
 .box{
 display: flex;
 justify-content:flex-end;
+
 
 }
 .show {
@@ -248,10 +266,11 @@ justify-content: center;
 }
 .container .doc_img{
 background-image: url(/images/doc.jpg);
-background-size: cover;
+background-size:initial;
 background-position: 50% 50%;
-height: 90%;
-width: 28%;
+background-repeat: no-repeat;
+height:90%;
+width:28%;
 position: absolute;
 left: -203px;
 bottom: 0px;
@@ -335,5 +354,7 @@ padding: 10px 20px 20px 20px;
         float: right;
         position: fixed;
         z-index: 1;
+        
     }
  }
+
