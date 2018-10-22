@@ -140,6 +140,12 @@ a{
     margin: 0 auto;
 }
 
+.nav-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .title1{
     margin-bottom: 60px;
@@ -410,6 +416,8 @@ height: 500px;
     .doc_img{
         display: none;
     }
+
+    
    
    
     
