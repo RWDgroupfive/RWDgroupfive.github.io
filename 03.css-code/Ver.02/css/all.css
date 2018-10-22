@@ -9,6 +9,14 @@
     #header{
         transition: all 0.4s;
     }
+
+    body :target:before {
+        display: block;
+        content: "";
+        height: 150px;
+        margin: 5px 0 0;
+    }
+
     .container{
         max-width: 1140px;
         position: relative;
