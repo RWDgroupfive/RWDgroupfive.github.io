@@ -13,6 +13,12 @@
         max-width: 1140px;
         position: relative;
     }
+    body :target:before {
+        display: block;
+        content: "";
+        height: 150px;
+        margin: 5px 0 0;
+    }
 
     .Ad_FeedMe{
         margin-right: 20px;
@@ -350,7 +356,7 @@ height: 500px;
 }
 
 .CopyRight{
-    background-color: #E6A5A5;
+    background-color: #E9D5D2;
     text-align: center;
     padding: 40px 0;
     font-size: 18px;
