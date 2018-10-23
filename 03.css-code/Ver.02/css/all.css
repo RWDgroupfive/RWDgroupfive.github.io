@@ -235,9 +235,10 @@ a{
 }
 
 .box864{  
-    margin:  0 auto;
-    max-width:864px;
-    margin-bottom: 60px;     
+    margin: 0 auto;
+    /* max-width: 864px; */
+    margin-bottom: 60px;
+    display: flex;   
 }
 .card-header{
     padding: 5px 10px;
@@ -245,8 +246,8 @@ a{
 
 .section .img1{
     background-image: url("/03.css-code/Ver.02/images/animal.jpg");
-    background-position: 100% 20%;
-    background-size:117%;
+    background-position: 100% 10%;
+    background-size: 140%;
     background-attachment:fixed;  
 }
 section .img1{
@@ -276,8 +277,13 @@ section .img1{
     margin-top: 38px;
     
 }
-  
-
+.backimg_1{
+    background-image: url("/03.css-code/Ver.02/images/Hospital\ 04-01.png");
+    background-position:50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;  
+    }
 
 .btn-group {
 width: 20px;
@@ -364,17 +370,18 @@ border-radius:30%;
 display: flex;
 justify-content: center;
 }
-.container .doc_img{
+/* .doc_img{
 background-image: url(/03.css-code/Ver.02/images/doc.jpg);
 background-size:initial;
 background-position: 50% 50%;
 background-repeat: no-repeat;
-height:90%;
-width:28%;
-position: absolute;
-left: -203px;
-bottom: 0px;
-z-index: 1;
+height: 600px;
+width: 100%;
+
+} */
+.accordion{
+    width: 1140px;
+    margin-bottom: 60px;
 }
 .container .top1_word{
 display:flex;
@@ -447,9 +454,7 @@ height: 500px;
     footer{
         margin: 0 auto;
     }
-    .doc_img{
-        display: none;
-    }
+    
 
     
    
@@ -461,3 +466,8 @@ height: 500px;
         display: none;
     }
 }
+/* @media screen and (max-width: 860px) { 
+    .doc_img{
+        display: none;
+    }
+} */
