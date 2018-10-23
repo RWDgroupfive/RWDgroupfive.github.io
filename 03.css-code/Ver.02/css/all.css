@@ -14,7 +14,7 @@
         display: block;
         content: "";
         height: 150px;
-        margin: 5px 0 0;
+        margin: 20px 0 0;
     }
 
     .container{
@@ -89,7 +89,7 @@ a{
     margin:5px;
 }
 .navBox{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 .mobile-navbar {
@@ -99,7 +99,7 @@ a{
     /* float: right; */
     /* position: fixed; */
     /* position: absolute; */
-    top:110px;
+    top:40px;
     /* z-index: 1; */
     /*前後排列 數字越大越前面*/
 }
@@ -169,14 +169,19 @@ a{
 }
 
 .carousel{
-    height: 550px;
-    margin-top: 120px;
+    height: 950px;
+    margin-top: 110px;
 }
 
-.largestBox{
-    margin-top: 60px;
-    margin-bottom: 60px;
+.carousel-WH{
+    width: 100%;
+    height: 900px;
 }
+
+/* .largestBox{
+    margin-top: 20px;
+    margin-bottom: 60px;
+} */
 
 .midBox2{
     margin: 0 auto;
@@ -419,15 +424,34 @@ height: 500px;
     font-size: 18px;
 }
 
-@media screen and (max-width: 460px) { 
+@media screen and (max-width: 460px) {
+    
+    body :target:before {
+        height: 50px;
+    }
+
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
 
     .nav-btn{
         display: block;
     }
 
+    .fas{
+
+    }
+
     .navBox{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .navItems{
+        height: 40px;
     }
 
     .nav-items{
@@ -444,6 +468,16 @@ height: 500px;
         z-index: 1;
         
     }
+
+    .carousel{
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    .carousel-WH{
+        height: 350px;
+    }
+
     .Ad_FeedMe{
         display: none;
     }
