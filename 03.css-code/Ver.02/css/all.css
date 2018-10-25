@@ -1,4 +1,6 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
 /*載入字型*/
 * {
     margin:0;
@@ -9,11 +11,14 @@
     #header{
         transition: all 0.4s;
     }
+    body{
+        position: relative;
+    }
 
     body :target:before {
         display: block;
         content: "";
-        height: 150px;
+        height: 50px;
         margin: 20px 0 0;
     }
 
@@ -34,6 +39,7 @@
     .meow{
         width: 142px;
         height: 155px;
+        
     }
 
     .Back_To_Top{
@@ -53,7 +59,7 @@
     .BackToTop{
         align-items: center;
         color: #EA8273;
-        font-size: 16px;
+        font-size: 21px;
     }
     .BackToTop:hover{
         color: #EFCD74;
@@ -200,11 +206,13 @@ a{
 
 .title1{
     margin-bottom: 25px;
+    margin-top: 50px;
 }
 
 .titleHello{
     color: #EA8273;
     font-size: 30px;
+   
 }
 
 
@@ -255,15 +263,15 @@ a{
 
 .section .img1{
     background-image: url("/03.css-code/Ver.02/images/animal.jpg");
-    background-position: 100% 10%;
+    background-position: 100% 24%;
     background-size: 140%;
-    background-attachment:fixed;  
+    background-attachment: scroll;  
 }
-section .img1{
+section .img_nit{
     background-image: url("/03.css-code/Ver.02/images/taichung\ city\ at\ night03_ps.jpg");
     background-position: 100% 20%;
     background-size:117%;
-    background-attachment:fixed;  
+    background-attachment:scroll;  
     position: relative;
 }
 
@@ -288,10 +296,11 @@ section .img1{
 }
 .backimg_1{
     background-image: url("/03.css-code/Ver.02/images/Hospital\ 04-01.png");
-    background-position:50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment:fixed;  
+    background-position: 100% 40%;
+    background-size: contain;
+    
+    background-attachment:scroll;  
+    
     }
 
 .btn-group {
@@ -323,6 +332,10 @@ display: block;
 button{
 margin: 0 10px;
 /* background-color: #E6A5A5; */
+}
+
+.titleHello{
+    text-shadow: rgb(190, 98, 83) 1.2px 1px 3px ;
 }
 
 
@@ -426,7 +439,7 @@ height: 500px;
 }
 
 .CopyRight{
-    background-color: #E6A5A5;
+    background-color: #e9d5d2;
     text-align: center;
     padding: 40px 0;
     font-size: 18px;
@@ -462,10 +475,77 @@ height: 500px;
 #header{
     transition: all 0.4s;
 }
+
+/* nav------------------------------------------------------------ */
+.wrapper {
+    overflow-x: hidden;
+    height: 100%;
+    position: relative;
+    /* left: 0; */
+}
+
+.toggle {
+    color: #333;
+    cursor: pointer;
+    font-size: 2em;
+    position: relative;
+    /* top: 20px; */
+    left: 20px;
+}
+
+.side-nav {
+    background-color: #e7e7e7;
+    border-right: 1px solid #34495e;
+    color: #fff;
+    position:fixed;
+    /* top: 80px; */
+    right: -231px;
+    width: 210px;
+    height: 100%;
+    padding: 10px;
+    /* z-index: 999; */
+}
+
+.side-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-nav ul a {
+    padding: 10px 20px;
+    display: block;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+.side-nav ul a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-open {
+    right: 231px;
+    z-index: 100;
+}
+
+.nav-open .side-nav {
+    right:  0;
+}
+
+.wrapper,
+.side-nav {
+    transition: left 0.2s ease;
+}
+
+main p {
+    padding: 0 10px;
+    margin-top: 50px;
+}
 @media screen and (max-width: 460px) {
     
     body :target:before {
-        height: 50px;
+        height: 10px;
     }
 
     /* .logo{

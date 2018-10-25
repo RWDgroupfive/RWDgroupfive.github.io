@@ -1,7 +1,7 @@
-let mobilestyletoggle = document.querySelector("#nav-btn")
-mobilestyletoggle.onclick = function () {
-    document.querySelector(".mobile-navbar").classList.toggle("active")
-}
+// let mobilestyletoggle = document.querySelector("#nav-btn")
+// mobilestyletoggle.onclick = function () {
+//     document.querySelector(".mobile-navbar").classList.toggle("active")
+// }
 
 var backtop = document.querySelector(".Back_To_Top")
 backtop.onclick = function () {
@@ -47,14 +47,38 @@ btn5.onclick = function () {
     tab5_content.classList.add("show");
 }
 
-
 function Scroll() {
     var top = document.getElementById("header");
+    var wrapper = document.getElementById("wrapper");
+    // console.log(wrapper)
     var ypos = window.pageYOffset;
     if (ypos > 587) {
         top.style.height = "30px";
+        wrapper.style.top = "30px";       
     } else {
         top.style.height = "70px";
+        wrapper.style.top = "70px";
     }
 }
 window.addEventListener("scroll", Scroll);
+// =============================?
+$(function () {
+    var wrapper = $(".wrapper"),
+        toggle = $(".toggle"),
+        nav = $(".side-nav");
+    toggle.on("click", function () {
+        wrapper.toggleClass("nav-open");
+        // Change the font-awesome icons on click.
+        toggle.toggleClass("fa-bars");
+        toggle.toggleClass("fa-times");
+    });
+
+    $(window).on("click", function (e) {
+        if (wrapper.hasClass("nav-open") &&
+            !$(e.target).hasClass("toggle")) {
+            wrapper.removeClass("nav-open");
+            toggle.toggleClass("fa-bars");
+            toggle.toggleClass("fa-times");
+        }
+    });
+});
