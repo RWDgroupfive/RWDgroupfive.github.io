@@ -14,10 +14,6 @@
     body{
         position: relative;
     }
-    .img_pic:hover{
-        width: 30px;
-        /* transform: scale(0.5,0.5); */
-    }
 
     body :target:before {
         display: block;
